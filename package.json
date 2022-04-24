@@ -3,19 +3,31 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.1.10",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
+    "prop-types": "^15.8.1",
+    "rc-slider": "^10.0.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
     "react-scripts": "4.0.0",
+    "styled-components": "^5.3.5",
     "web-vitals": "^0.2.4"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "test": "react-scripts test --watchAll=false",
+    "coverage": "react-scripts test --coverage --watchAll=false",
+    "eject": "react-scripts eject",
+    "lint-fix": "eslint . --ext .js --fix",
+    "lint-check": "eslint . --ext .js"
+  },
+  "jest": {
+    "coveragePathIgnorePatterns": [
+      "<rootDir>/src/assets/",
+      "<rootDir>/src/containers/",
+      "<rootDir>/src/constant/",
+      "<rootDir>/src/styled/",
+      "<rootDir>/src/index.js"
+    ]
   },
   "eslintConfig": {
     "extends": [
@@ -34,5 +46,30 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^16.2.3",
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.1.1",
+    "@testing-library/user-event": "^14.1.1",
+    "eslint": "7.32.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-import-resolver-node": "^0.3.6",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-json": "^2.1.2",
+    "eslint-plugin-promise": "^5.2.0",
+    "eslint-plugin-react": "^7.29.4",
+    "eslint-plugin-styled-components": "0.0.0",
+    "husky": "^7.0.4",
+    "jest-transform-stub": "^2.0.0",
+    "jest-watch-typeahead": "^0.6.5",
+    "lint-staged": "^10.5.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/arielerv/ejercicio-react"
+  },
+  "author": "Ariel Erviti (https://github.com/arielerv)",
+  "license": "MIT"
 }

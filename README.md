@@ -2,7 +2,7 @@
 
 ## Ejercicio
 ### Diseño
-![UI](/ejercicio.jpg?raw=true)
+![UI](/exercise.jpg?raw=true)
 * Los valores con bordes (Monto Total y Plazo) son inputs de numeros.
 * Los textos Obtené Crédito y Ver detalle de cuotas son botones.
 * La font utilizada es Montserrat (agregarla al html).
@@ -22,7 +22,7 @@
 ````
 build/
 src/
-|- index.js _______________________________ # entrada de la aplicación
+|- Fonts.js _______________________________ # entrada de la aplicación
 |- App.js _________________________________ # Componente principal
 ````
 
